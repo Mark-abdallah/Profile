@@ -1,0 +1,330 @@
+body, .container-fluid, html {
+  font-family: 'Bebas Neue', cursive;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 55vw;
+}
+
+#headerContainer {
+  background-color: #1b242f;
+  height: 55vw;
+  margin: 0px;
+}
+
+#headerContainer #iam {
+  width: 50vw;
+}
+
+#headerContainer #iam #Highlight {
+  font-size: 4vw;
+}
+
+#headerContainer #iam #btnView {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 6vw;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+#headerContainer #iam #btnView:hover {
+  background-color: #05bcc3;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#headerContainer #iam #btnView #btnText {
+  font-size: 3vw;
+}
+
+#headerContainer .MarkAbdalah {
+  color: #b92262;
+}
+
+#arrow {
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.hexagon {
+  width: 9vw;
+  height: 5.19615vw;
+  background: #b92261;
+  position: relative;
+}
+
+.hexagon::before {
+  content: "";
+  position: absolute;
+  top: -2.59807vw;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 4.5vw solid transparent;
+  border-right: 4.5vw solid transparent;
+  border-bottom: 2.59807vw solid #b92262;
+}
+
+.hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -2.59807vw;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 4.5vw solid transparent;
+  border-right: 4.5vw solid transparent;
+  border-top: 2.59807vw solid #b92262;
+}
+
+.hexagonM {
+  width: 27vw;
+  height: 15.58845vw;
+  background: #b92261;
+  position: relative;
+}
+
+.hexagonM::before {
+  content: "";
+  position: absolute;
+  top: -7.79421vw;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 13.5vw solid transparent;
+  border-right: 13.5vw solid transparent;
+  border-bottom: 7.79421vw solid #b92262;
+}
+
+.hexagonM::after {
+  content: "";
+  position: absolute;
+  bottom: -7.79421vw;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 13.5vw solid transparent;
+  border-right: 13.5vw solid transparent;
+  border-top: 7.79421vw solid #b92262;
+}
+
+.barAdjust {
+  background-color: #b92262;
+  padding-left: 12px;
+  height: inherit;
+  margin: 0px;
+}
+
+.percentage {
+  width: 100%;
+  height: inherit;
+  padding-right: 4px;
+}
+
+.underLine {
+  height: 4px;
+  width: 5%;
+  background-color: black;
+}
+
+.prjNav {
+  height: 4vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navBtn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 10vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5px;
+  border: 0px;
+  background-color: inherit;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.navBtn:focus {
+  background-color: #b92262;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.projDetails {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.questionColor {
+  color: #05bcc3;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  background-color: #212529;
+  color: white;
+  border-color: white;
+  font-size: 20px;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.submitBtn:hover {
+  background-color: #05bcc3;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.contactBackgroundColor {
+  background-color: #262f38;
+}
+
+.socialBtn {
+  background-color: #252934;
+  border: 0px;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.socialBtn:hover {
+  background-color: #05bcc3;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.innerLogo {
+  color: white;
+  font-size: 20px;
+}
+
+#topBtn {
+  background-color: #b92262;
+  color: white;
+  font-size: 30px;
+  width: 40px;
+  font-weight: bolder;
+}
+
+.navSpy {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.navSpy:active {
+  color: #b92262;
+}
+
+.navSpy:hover {
+  color: #b92262;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.navContainer {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #1b242f;
+}
+
+#footer {
+  background-color: #1b242f;
+}
+
+.text-color {
+  color: #b92262;
+}
+
+.projectDetailsBtn {
+  margin-top: 35%;
+  width: 40%;
+  border: 2px solid #b92262;
+  background-color: transparent;
+  color: black;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.projectDetailsBtn:hover {
+  background-color: #b92262;
+  color: white;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+/*# sourceMappingURL=Styling.css.map */

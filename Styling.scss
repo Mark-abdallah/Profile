@@ -1,0 +1,245 @@
+body,.container-fluid,html{
+    font-family: 'Bebas Neue', cursive;
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+canvas {
+  position:absolute;
+  width: 100%;
+  height: 55vw;
+}
+
+
+#headerContainer {
+  background-color: #1b242f;
+    height:55vw;
+    margin: 0px;
+   
+    
+    #iam{
+        width: 50vw;
+        #Highlight{
+               font-size: 4vw;
+        }
+        #btnView{
+            width:fit-content;
+            height:6vw;
+            border:2px solid white;
+            color:white;
+            text-decoration: none;
+            &:hover{
+              background-color:#05bcc3;
+              transition:all;
+              transition-duration:0.5s;
+            }
+            #btnText{
+                font-size:3vw;
+            }
+        }
+    }
+    .MarkAbdalah{
+        color:#b92262 ;
+    }
+}
+#arrow{
+  transition:all;
+  transition-duration: 700ms
+}
+    .text-focus-in{-webkit-animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
+ @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+//  the pentagoon shape 
+.hexagon {
+    width: 9vw;
+    height: 5.19615vw;
+    background:hsl(335, 69%, 43%);
+    position: relative;
+  }
+  .hexagon::before {
+    content: "";
+    position: absolute;
+    top: -2.59807vw;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 4.5vw solid transparent;
+    border-right: 4.5vw solid transparent;
+    border-bottom: 2.59807vw solid #b92262;
+  }
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -2.59807vw;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 4.5vw solid transparent;
+    border-right: 4.5vw solid transparent;
+    border-top: 2.59807vw solid #b92262;
+  }
+  
+  .hexagonM {
+    width: 9*3vw;
+    height: 5.19615*3vw;
+    background:hsl(335, 69%, 43%);
+    position: relative;
+  }
+  .hexagonM::before {
+    content: "";
+    position: absolute;
+    top: -2.59807*3vw;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 4.5*3vw solid transparent;
+    border-right: 4.5*3vw solid transparent;
+    border-bottom: 2.59807*3vw solid #b92262;
+  }
+  .hexagonM::after {
+    content: "";
+    position: absolute;
+    bottom: -2.59807*3vw;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 4.5*3vw solid transparent;
+    border-right: 4.5*3vw solid transparent;
+    border-top: 2.59807*3vw solid #b92262;
+  }
+  .barAdjust{
+     
+      background-color: #b92262 ;
+     padding-left: 12px;
+     height:inherit;
+     margin:0px
+}
+.percentage{
+width: 100%;
+height: inherit;
+padding-right: 4px;
+}
+.underLine{
+height:4px;
+width: 5%;
+background-color: black;
+}
+.prjNav{
+height:4vw;
+margin: 0px;
+padding: 0px;
+}
+.navBtn{
+height:fit-content;
+  min-width: 10vw;
+  width:fit-content;
+  margin: 5px;
+  border:0px;
+  background-color:inherit;
+  transition:all;
+  transition-duration:0.5s;
+  &:focus{
+    background-color: #b92262 ;
+    transition:all;
+    transition-duration:0.5s;
+  }
+  
+}
+.projDetails{
+    width: 100%;
+    height: 100%;
+    transition:all;
+    transition-duration: 0.5s;
+    opacity: 0;
+} 
+.questionColor{
+  color : #05bcc3;
+}
+.submitBtn{
+  margin-top: 20px;
+  background-color: #212529;
+  color:white;
+  border-color: white;
+  font-size: 20px;
+  transition: all ;
+  transition-duration: 500ms;
+  &:hover{
+    background-color:#05bcc3;
+    transition: all ;
+  transition-duration: 500ms;
+  }
+}
+.contactBackgroundColor{
+  background-color: #262f38;
+}
+.socialBtn{
+  background-color: #252934;
+  border:0px ;
+  transition: all ;
+  transition-duration: 0.5s;
+  &:hover{
+    background-color:#05bcc3;
+    transition: all ;
+    transition-duration: 0.5s;
+  }
+}
+.innerLogo{
+  color: white;
+  font-size:20px;
+}
+#topBtn{
+  background-color: #b92262;
+  color:white;
+  font-size:30px;
+  width:40px;
+  font-weight: bolder;
+}
+.navSpy{
+  text-decoration: none;
+  color:white; 
+  font-size:20px;
+  transition: all;
+  transition-duration: 0.5s;
+  &:active{
+    color:#b92262;
+  }
+  &:hover{
+    color:#b92262;
+    transition: all;
+  transition-duration: 0.5s;
+  }
+
+}
+.navContainer{
+  height: fit-content;
+  background-color:#1b242f;
+}
+#footer{
+  background-color: #1b242f;
+}
+.text-color{
+  color: #b92262;
+}
+.projectDetailsBtn{
+
+  margin-top: 35%;
+  width: 40%;
+  border: 2px solid #b92262;
+  background-color:transparent;
+  color: black ;
+  transition: all ;
+  transition-duration: 0.5s;
+  &:hover{
+    background-color: #b92262 ;
+    color:white;
+    transition: all ;
+    transition-duration: 0.5s;
+  }
+}
+
+//the back ground animation
+
+
+  
+  
+ 
+  
